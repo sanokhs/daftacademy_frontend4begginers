@@ -109,7 +109,7 @@ ul {
 
 .about__image {
     float: right;
-    width: 45vw;
+    width: 45%;
     margin-right: 30px;
     margin-top: 30px;
     border-top: 3px #ec008c solid;
@@ -226,9 +226,8 @@ iframe {
 }
 
 .band-photos__image {
-    width: 18vw;
-    height: auto;
-    margin: 5px;
+    width: 100%;
+    max-width: 300px;
     border-top: 3px #ec008c solid;
 }
 
@@ -289,4 +288,45 @@ address {
     background: rgb(204, 200, 255, 0.1);
     cursor: pointer;
     margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) { 
+    .band-photos {
+        justify-content: center;
+    }
+    
+    .members {
+        justify-content: center;
+    }
+    
+    .concerts {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) { 
+    .band-photos__item {
+        margin: 25px 0 0 0;
+    }
+    
+    .concerts {
+        justify-content: center;
+    }
+    
+    .band-photos__image {
+        max-width: 450px;
+    }
+}
+@media (max-width: 320px) { 
+        .band-photos {
+        justify-content: center;
+    }
+    
+    .members {
+        justify-content: center;
+    }
+    
+    .concerts {
+        justify-content: center;
+    }
 }
