@@ -290,43 +290,121 @@ address {
     margin-bottom: 40px;
 }
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
     .band-photos {
         justify-content: center;
     }
-    
+
     .members {
         justify-content: center;
     }
-    
+
     .concerts {
         justify-content: center;
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .band-photos__item {
         margin: 25px 0 0 0;
     }
-    
+
     .concerts {
         justify-content: center;
     }
-    
+
     .band-photos__image {
         max-width: 450px;
     }
 }
-@media (max-width: 320px) { 
-        .band-photos {
+
+@media (max-width: 320px) {
+    .band-photos {
         justify-content: center;
     }
-    
+
     .members {
         justify-content: center;
     }
-    
+
     .concerts {
         justify-content: center;
     }
+}
+
+
+/*Dodane animacje do przycisków i zdjęć*/
+
+
+.band-photos__image:hover {
+    transition-duration: 1s;
+    transform: scale(1.1);
+}
+
+.button-buy:hover {
+    background-color: rgba(204, 200, 255, 0.5);
+}
+
+.button-buy:focus {
+    background-color: rgba(204, 200, 255, 0.5);
+    border: 1px solid #CCC8FF;
+}
+
+.button-buy:disabled {
+    color: #CCC8FF;
+    opacity: 0.1;
+}
+
+.button-contact:hover {
+    background-color: rgba(204, 200, 255, 0.5);
+}
+
+.button-contact:focus {
+    background-color: rgba(204, 200, 255, 0.5);
+    border: 1px solid #CCC8FF;
+}
+
+.button-contact:disabled {
+    color: #CCC8FF;
+    opacity: 0.1;
+}
+
+.navigation__item__font:hover {
+    opacity: 1;
+}
+
+.navigation__item__font:disabled {
+    opacity: 0.4;
+}
+
+.navigation__item__font:active {
+    opacity: 0.6;
+}
+
+.navigation__item__font:focus {
+    opacity: 1;
+}
+
+.members__item:hover {
+    opacity: 1;
+}
+
+.members__item:hover {
+    opacity: 1;
+}
+
+.members__item:hover {
+    opacity: 0.8;
+}
+
+.members__image:hover {
+    opacity: 1;
+}
+
+.members__name:hover {
+    opacity: 1;
+}
+
+.members__role:hover {
+    opacity: 0.8;
 }
